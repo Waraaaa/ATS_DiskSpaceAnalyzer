@@ -1,5 +1,5 @@
 #======================================================
-# Import necessary modules
+# Import
 import os
 import sys
 import shutil
