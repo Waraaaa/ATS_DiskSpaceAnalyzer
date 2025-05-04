@@ -13,9 +13,8 @@ def log_benchmark(
     header = [
         "version", "timestamp", "path", "item_count", "total_size_bytes",
         "elapsed_time_sec", "cpu_percent", "mem_percent",
-        "disk_read_bytes", "disk_write_bytes", 
         "proc_read_bytes", "proc_write_bytes",
-        "num_threads", "ctx_switches_vol", "ctx_switches_invol", "max_threads"
+        "num_threads", "max_threads"
     ]
 
     pid = os.getpid()
