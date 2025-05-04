@@ -1,5 +1,5 @@
 #======================================================
-# Imports required for package installation
+# Import
 import subprocess
 import sys
 import os
