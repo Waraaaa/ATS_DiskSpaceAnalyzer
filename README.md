@@ -27,14 +27,7 @@ Many users struggle to identify large or unnecessary files, leading to storage i
 - **Recursive Directory Scanning:** Recursively scans directories and sum up the sizes of all files and folders.
 - **Detailed File Size Reporting:** Sizes are presented in human-readable formats (e.g., KB, MB, GB) for easy understanding.
 - **Visualization:** Display the results in paginated format to handle large directories, making it easier to navigate through results, which will also be visualized in bar charts, with horizontal bars representing file sizes.
-- **Benchmark Logging:** logs detailed performance benchmarks and logs are saved in a CSV file:
-  - Time taken to scan the directory
-  - Total number of files processed
-  - Aggregate size of files processed
-  - CPU usage
-  - memory usage
-  - disk I/O statistics
-  - process-specific I/O
+- **Benchmark Logging:** logs detailed performance benchmarks and logs are saved in a CSV file.
 - **Efficient Resource Management:** Optimized algorithms to minimize resource usage during the scan.
 - **Modular Design:** Designed with a modular structure where utilities are separated into different modules for easier maintenance and extensibility.
 
@@ -61,10 +54,10 @@ ATS_DiskSpaceAnalyzer/
 │
 ├── disk_analyzer/
 │   ├── __init__.py
-│   ├── analyzer.py           # Common helper functions 
+│   ├── analyzer.py           # Main analysis module for scanning a directory, collecting file system statistics, and aggregating disk usage data 
 ├── disk_analyzer_optimize/
 │   ├── __init__.py
-│   ├── analyzer.py           # Common helper functions
+│   ├── analyzer.py           # Optimized main analysis module
 ├── disk_analyzer_utils/
 │   ├── __init__.py
 │   ├── plotting.py           # For plotting bar charts
